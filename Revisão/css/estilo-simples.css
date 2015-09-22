@@ -1,0 +1,15 @@
+﻿#section-principal {
+    background-color: #ff6a00;
+}
+
+.borda-caixa {
+    border: 2px double red;
+}
+
+section.borda-caixa {
+    padding: 50px;
+}
+
+ul.borda-caixa {
+    background-color: magenta;
+}

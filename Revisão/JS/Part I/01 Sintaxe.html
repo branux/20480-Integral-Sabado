@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Sintaxe</title>
+</head>
+<body>
+    <p id="paragrafo1">
+        Texto qualquer dentro do parágrafo<br><strong>Linha 2 do parágrado</strong>
+    </p>
+    <div class="divSaida">
+        <p>Parágrafo dentro de uma div</p>
+    </div>
+    <div class="divSaida">
+        <p>Parágrafo dentro de outra div</p>
+    </div>
+    <script>
+        /*
+            Ver no console do Browser F12
+        */
+
+        //recuperar o conteúdo em formaro texto
+        var textoParagrafo1 = document.getElementById("paragrafo1").innerText;
+        console.log(textoParagrafo1);
+
+        //recuperar o conteúdo em formaro texto
+        var htmlParagrafo1 = document.getElementById("paragrafo1").innerHTML;
+        console.log(htmlParagrafo1);
+
+        //Buscando elemento pela classe
+        var divsComAClasseDivSaida = document.getElementsByClassName("divSaida");
+        console.log(divsComAClasseDivSaida);
+
+        var primeiraVivComAClasseDivSaida = document.getElementsByClassName("divSaida")[0].innerText;
+        console.log(primeiraVivComAClasseDivSaida);
+    </script>
+</body>
+</html>

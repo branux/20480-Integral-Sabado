@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Eventos</title>
+</head>
+<body>
+    <!--evento pelo atributo-->
+    <button onclick="alert('Olá')">Executar como atributo</button>  
+
+    <br />
+
+    <button id="botao2">Executar através do método do elemento</button>
+    
+    <br />
+
+    <button id="botao3">Executar através do event handler</button>
+
+    <script>
+        //botao2.onclick
+        document.getElementById("botao2").onclick = function () {
+            alert("clicou no botão2");
+        };
+
+        botao3.addEventListener("click", Alerta);
+
+        function Alerta() {
+            alert("clicou no botão3");
+        };
+    </script>
+</body>
+</html>

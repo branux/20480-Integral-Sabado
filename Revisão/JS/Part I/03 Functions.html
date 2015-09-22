@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Functions</title>
+    <script>
+        function SemParametro() {
+            //estou só declarando ela não vai ser executada
+            var msg = "Função sem parâmetro r que retorna uma string no console";
+            console.log(msg);
+        };
+    </script>
+</head>
+<body>
+    <p>
+        Documento em branco, pressione F12 e veja no Console
+    </p>
+    <script>
+        //estou chamando a função que está no head
+        SemParametro();
+        var resultado = FuncaoSoma(2, 1);
+        console.log(resultado);
+
+        function FuncaoSoma(x, y) {
+            var z = x + y;
+            return z;
+        };
+
+        var funcaonaVariavel = function (msg) {
+            console.log(msg);
+        };
+
+        funcaonaVariavel("mensagem teste");
+
+
+    </script>
+</body>
+</html>

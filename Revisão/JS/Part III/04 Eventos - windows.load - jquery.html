@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Eventos</title>
+    <script src="../../Scripts/jquery-2.1.4.js"></script>
+</head>
+<body>
+
+    <script>
+
+
+        //window.addEventListener("load", AddEventos);
+        $().ready(function () {
+
+            $(".teste,#botao3").on("click",function () {
+                alert("clicou no botão");
+            });
+
+        });
+    </script>
+
+    <button id="botao2" class="teste">Executar através do método do elemento</button>
+
+    <br />
+
+    <button id="botao3">Executar através do event handler</button>
+
+
+</body>
+</html>

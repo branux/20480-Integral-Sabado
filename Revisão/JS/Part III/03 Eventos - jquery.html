@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Eventos</title>
+    <script src="../../Scripts/jquery-2.1.4.js"></script>
+</head>
+<body>
+    <!--evento pelo atributo-->
+    <button onclick="alert('Olá')">Executar como atributo</button>  
+
+    <br />
+
+    <button id="botao2">Executar através do método do elemento</button>
+    
+    <br />
+
+    <button id="botao3">Executar através do event handler</button>
+
+    <script>
+        //botao2.onclick
+        //document.getElementById("botao2").onclick = function () {
+        //    alert("clicou no botão2");
+        //};
+
+        //botao3.addEventListener("click", Alerta);
+
+
+        $("#botao2").on("click",function () {
+                alert("clicou no botão2");
+            });
+
+        $("#botao3").on("click", Alerta);
+
+        function Alerta() {
+            alert("clicou no botão3");
+        };
+    </script>
+</body>
+</html>

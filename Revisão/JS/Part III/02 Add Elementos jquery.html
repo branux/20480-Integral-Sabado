@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .demoClass {
+            color:red;
+        }
+    </style>
+    <script src="../../Scripts/jquery-2.1.4.js"></script>
+</head>
+<body>
+    <h1>Título</h1>
+    <h1 id="esse">Título 2</h1>
+    <div id="minhaDiv"></div>
+
+    <script>
+        //criando elemento
+        //var btn = document.createElement("button");
+        //adicionando texto
+        //var texto = document.createTextNode("Texto do botão");
+        //btn.appendChild(texto);
+        //add
+        //document.body.appendChild(btn);
+
+        $("<button>Texto do Botão</button>").appendTo("body");
+
+
+
+        //add atributo
+        //var h1 = document.getElementsByTagName("h1")[0];
+        //var att = document.createAttribute("class");
+        //att.value = "demoClass";
+        //h1.setAttributeNode(att);
+        $("#esse").addClass("demoClass");
+    </script>
+</body>
+</html>

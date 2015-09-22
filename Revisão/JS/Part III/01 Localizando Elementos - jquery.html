@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Exemplo</title>
+    <script src="../../Scripts/jquery-2.1.4.js"></script>
+</head>
+<body>
+    <form name="contactForm">
+        Nome:
+        <input type="text" name="nameBox" id="nameBoxId" value="Fabiano" />
+    </form>
+
+    <script>
+        //identificar no form através do js
+        //var form1 = document.forms[0];
+        var form1 = $("form").first();
+
+        //var form2 = document.forms["contactForm"];
+        var form2 = $("form[name='contactForm']");
+
+        console.log("Exibindo o conteúdo do form como obj no DOM " + form1.text());
+        console.log("Exibindo o conteúdo do form como obj no DOM " + form2.html());
+        
+        //navegar na arvore do DOM
+        var nome = form1.find("#nameBoxId");
+        console.log(nome.val());
+        //console.log(nome2);
+
+
+    </script>
+</body>
+</html>
